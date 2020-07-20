@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8792017424C62DDD00D54106 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792017324C62DDD00D54106 /* Page.swift */; };
 		87ABB6F224B8C2130061471A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABB6F124B8C2130061471A /* AppDelegate.swift */; };
 		87ABB6F424B8C2130061471A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABB6F324B8C2130061471A /* SceneDelegate.swift */; };
 		87ABB6F624B8C2130061471A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABB6F524B8C2130061471A /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8792017324C62DDD00D54106 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		87ABB6EE24B8C2130061471A /* Studyflo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studyflo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ABB6F124B8C2130061471A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87ABB6F324B8C2130061471A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				87ABB6F324B8C2130061471A /* SceneDelegate.swift */,
 				87ABB6F524B8C2130061471A /* ViewController.swift */,
 				87ABB70824B8D53B0061471A /* PageCell.swift */,
+				8792017324C62DDD00D54106 /* Page.swift */,
 				87ABB6F724B8C2130061471A /* Main.storyboard */,
 				87ABB6FD24B8C2150061471A /* Assets.xcassets */,
 				87ABB6FF24B8C2150061471A /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				87ABB6F624B8C2130061471A /* ViewController.swift in Sources */,
 				87ABB70924B8D53B0061471A /* PageCell.swift in Sources */,
+				8792017424C62DDD00D54106 /* Page.swift in Sources */,
 				87ABB6F224B8C2130061471A /* AppDelegate.swift in Sources */,
 				87ABB6F424B8C2130061471A /* SceneDelegate.swift in Sources */,
 				87ABB6FC24B8C2130061471A /* Studyflo.xcdatamodeld in Sources */,

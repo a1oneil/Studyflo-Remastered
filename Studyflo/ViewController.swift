@@ -23,6 +23,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }()
     
     let cellId = "cellId"
+    
+    // creates an empty array and sets pages to an empty array
+    let pages: [Page] = {
+        let firstPage = Page(title: "Welcome to Studyflo", message: "Create an account", imageName: "oceanframe1")
+        
+        let secondPage = Page(title: "Welcome to Studyflo", message: "Plan ahead", imageName: "studyflo_1")
+        
+        let thirdPage = Page(title: "Organize", message: "To Do List Stuff", imageName: "oceanframe1")
+        
+        let fourthPage = Page(title: "Take a moment for yourself", message: "Meditation timer", imageName: "studyflo_1")
+        
+        return [firstPage, secondPage, thirdPage, fourthPage]
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +48,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 4
+        return pages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PageCell
+        
+        let page = pages[indexPath.item]
+        cell.page = page
         
         return cell
     }
